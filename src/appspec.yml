@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: myangularapps
+    destination: /var/www/html
+permissions:
+  - object: /var/www/html
+    pattern: '**'
+    mode: '0755'
+    owner: root
+    group: root
+    type:
+      - file
+      - directory
+
+      
